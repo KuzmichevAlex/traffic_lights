@@ -16,49 +16,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zAf-gu-haY">
-                                <rect key="frame" x="67.5" y="20" width="240" height="128"/>
+                                <rect key="frame" x="112" y="53" width="151" height="150"/>
                                 <color key="backgroundColor" red="1" green="0.043855228919718332" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zAf-gu-haY" secondAttribute="height" multiplier="151:150" id="QQl-0B-ahD"/>
+                                    <constraint firstAttribute="height" constant="150" id="bLw-09-0CJ"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Il9-Aa-41p">
-                                <rect key="frame" x="67.5" y="174" width="240" height="128"/>
+                                <rect key="frame" x="112" y="227" width="151" height="150"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Il9-Aa-41p" secondAttribute="height" multiplier="151:150" id="2MZ-3p-7jy"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nf7-ei-w1g">
-                                <rect key="frame" x="67.5" y="327" width="240" height="128"/>
+                                <rect key="frame" x="112" y="402" width="151" height="150"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nf7-ei-w1g" secondAttribute="height" multiplier="151:150" id="cCb-EO-VKs"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ax-x6-Phd">
-                                <rect key="frame" x="76" y="549" width="231" height="30"/>
+                                <rect key="frame" x="52" y="597" width="271" height="50"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <state key="normal" title="START">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="hyU-Py-VKJ"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zAf-gu-haY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67.5" id="0Lf-34-ur7"/>
-                            <constraint firstItem="Nf7-ei-w1g" firstAttribute="height" secondItem="1ax-x6-Phd" secondAttribute="height" multiplier="4.26667" id="1zO-zy-53b"/>
-                            <constraint firstItem="Nf7-ei-w1g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67.5" id="2wx-Xr-GQr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zAf-gu-haY" secondAttribute="trailing" constant="67.5" id="3K4-Sh-Zzi"/>
-                            <constraint firstItem="1ax-x6-Phd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="N51-0d-x4b"/>
-                            <constraint firstItem="Nf7-ei-w1g" firstAttribute="top" secondItem="Il9-Aa-41p" secondAttribute="bottom" constant="25" id="NCG-pC-z6Z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nf7-ei-w1g" secondAttribute="trailing" constant="67.5" id="P0k-6f-EfB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1ax-x6-Phd" secondAttribute="bottom" constant="88" id="XMD-lY-flX"/>
-                            <constraint firstItem="Il9-Aa-41p" firstAttribute="top" secondItem="zAf-gu-haY" secondAttribute="bottom" constant="26" id="Y6b-0K-yjH"/>
-                            <constraint firstItem="1ax-x6-Phd" firstAttribute="top" secondItem="Nf7-ei-w1g" secondAttribute="bottom" constant="94" id="a3Z-e0-A3V"/>
-                            <constraint firstItem="Il9-Aa-41p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67.5" id="cjC-r5-y3H"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Il9-Aa-41p" secondAttribute="trailing" constant="67.5" id="i0R-zY-JfS"/>
-                            <constraint firstItem="Il9-Aa-41p" firstAttribute="height" secondItem="zAf-gu-haY" secondAttribute="height" id="kSM-Cp-6O4"/>
-                            <constraint firstItem="Il9-Aa-41p" firstAttribute="height" secondItem="Nf7-ei-w1g" secondAttribute="height" id="rwS-tk-6cl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ax-x6-Phd" secondAttribute="trailing" constant="68" id="ycP-2g-pkd"/>
+                            <constraint firstItem="zAf-gu-haY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="5v0-iN-Cxb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1ax-x6-Phd" secondAttribute="bottom" constant="20" id="6ej-xV-al2"/>
+                            <constraint firstItem="1ax-x6-Phd" firstAttribute="top" secondItem="Nf7-ei-w1g" secondAttribute="bottom" constant="45" id="75n-7G-F7b"/>
+                            <constraint firstItem="zAf-gu-haY" firstAttribute="trailing" secondItem="Nf7-ei-w1g" secondAttribute="trailing" id="7iE-4j-df5"/>
+                            <constraint firstItem="zAf-gu-haY" firstAttribute="leading" secondItem="Il9-Aa-41p" secondAttribute="leading" id="8a5-JM-Fga"/>
+                            <constraint firstItem="Nf7-ei-w1g" firstAttribute="top" secondItem="Il9-Aa-41p" secondAttribute="bottom" constant="25" id="BAZ-Dw-rNt"/>
+                            <constraint firstItem="1ax-x6-Phd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="Fvz-Hx-4bu"/>
+                            <constraint firstItem="Il9-Aa-41p" firstAttribute="top" secondItem="zAf-gu-haY" secondAttribute="bottom" constant="24" id="HOx-c5-08v"/>
+                            <constraint firstItem="zAf-gu-haY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="Kf0-8G-6Rl"/>
+                            <constraint firstItem="zAf-gu-haY" firstAttribute="centerX" secondItem="1ax-x6-Phd" secondAttribute="centerX" id="L7C-GW-gDV"/>
+                            <constraint firstItem="Il9-Aa-41p" firstAttribute="height" secondItem="zAf-gu-haY" secondAttribute="height" id="YZ8-sC-VLD"/>
+                            <constraint firstItem="zAf-gu-haY" firstAttribute="leading" secondItem="Nf7-ei-w1g" secondAttribute="leading" id="Yk3-zO-sjT"/>
+                            <constraint firstItem="zAf-gu-haY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b1P-zW-MOL"/>
+                            <constraint firstItem="zAf-gu-haY" firstAttribute="trailing" secondItem="Il9-Aa-41p" secondAttribute="trailing" id="dn4-Av-X10"/>
+                            <constraint firstItem="Nf7-ei-w1g" firstAttribute="height" secondItem="Il9-Aa-41p" secondAttribute="height" id="g0J-vM-bqr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="greenLable" destination="Nf7-ei-w1g" id="1QR-4r-WRs"/>
                         <outlet property="redLable" destination="zAf-gu-haY" id="aVN-tL-STQ"/>
-                        <outlet property="startButton" destination="1ax-x6-Phd" id="PgA-os-pY5"/>
+                        <outlet property="startButton" destination="1ax-x6-Phd" id="myR-Ti-zYI"/>
                         <outlet property="yellowLable" destination="Il9-Aa-41p" id="GPc-sC-alt"/>
                     </connections>
                 </viewController>
